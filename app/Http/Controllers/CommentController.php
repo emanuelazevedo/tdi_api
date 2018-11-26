@@ -12,7 +12,7 @@ class CommentController extends Controller
 {
     //
     /**
-     * Display a listing of the resource.
+     * Listar Comentarios
      *
      * @return \Illuminate\Http\Response
      */
@@ -34,7 +34,7 @@ class CommentController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Criar um Comentarios
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -56,7 +56,7 @@ class CommentController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Mostrar um Comentario
      *
      * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
@@ -81,7 +81,7 @@ class CommentController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Editar um Comentario
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Comment  $comment
@@ -106,7 +106,7 @@ class CommentController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remover um Comentario
      *
      * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response

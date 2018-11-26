@@ -12,7 +12,7 @@ use Validator;
 class UserController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Listar todos os Users
      *
      * @return \Illuminate\Http\Response
      */
@@ -34,7 +34,7 @@ class UserController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Criar um User
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -76,7 +76,7 @@ class UserController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Mostrar um User
      *
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
@@ -100,7 +100,7 @@ class UserController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Editar um User
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\User  $user
@@ -127,7 +127,7 @@ class UserController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remover um User
      *
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response

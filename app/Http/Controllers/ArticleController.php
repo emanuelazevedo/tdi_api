@@ -16,7 +16,7 @@ class ArticleController extends Controller
 {
     //
     /**
-     * Display a listing of the resource.
+     * Listar todos os Artigos
      *
      * @return \Illuminate\Http\Response
      */
@@ -38,7 +38,7 @@ class ArticleController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Criar um artigo
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -63,7 +63,7 @@ class ArticleController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Mostrar um artigo
      *
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
@@ -87,7 +87,7 @@ class ArticleController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Editar um artigo
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Article  $article
@@ -113,7 +113,7 @@ class ArticleController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remover um artigo
      *
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response

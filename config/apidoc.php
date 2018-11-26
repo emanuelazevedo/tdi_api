@@ -62,6 +62,7 @@ return [
              */
             'include' => [
                 // 'users.index', 'healthcheck*'
+                'user.*', 'article.*', 'comment.*'
             ],
 
             /*
@@ -70,7 +71,7 @@ return [
              * Note that the route must be referenced by name here (wildcards are supported).
              */
             'exclude' => [
-                // 'users.create', 'admin.*'
+                'user.create', 'user.edit', 'article.create', 'article.edit', 'comment.create', 'comment.edit',
             ],
 
             /*
