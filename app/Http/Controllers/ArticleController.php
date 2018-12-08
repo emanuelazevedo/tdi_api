@@ -72,6 +72,7 @@ class ArticleController extends Controller
     {
         //
         $user = $article->user;
+        $comments = $article->comments;
         return $article;
     }
 
