@@ -49,10 +49,10 @@ class ArticleController extends Controller
 
         $data = $request->only(['title', 'description', 'image', 'user_id']);
 
-        $data['image'] = $request->file('image');
+        //$data['image'] = $request->file('image');
         // Storage::putFile('image', new File(public_path.'articleImages'));
-        $filename = time().'.'.$data['image']->getClientOriginalExtension();
-        Image::make($data['image'])->save(public_path('/articleImages'.$filename));
+        //$filename = time().'.'.$data['image']->getClientOriginalExtension();
+        //Image::make($data['image'])->save(public_path('/articleImages'.$filename));
         $article = Article::create($data);
         return Response([
           'status' => 0,
