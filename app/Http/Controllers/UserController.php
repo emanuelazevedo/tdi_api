@@ -7,10 +7,16 @@ use App\Http\Requests\UserCreateRequest;
 use App\User;
 use Illuminate\Http\Request;
 use Validator;
+use Auth;
 
 
 class UserController extends Controller
 {
+
+    public function _constructor(){
+      $this->middleware('auth:api');
+    }
+
     /**
      * Listar todos os Users
      *
@@ -142,5 +148,9 @@ class UserController extends Controller
           'msg' => 'ok'
         ], 200);
 
+    }
+
+    public function getAuthUser(){
+      return Auth::user();
     }
 }

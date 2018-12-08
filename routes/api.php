@@ -22,3 +22,5 @@ Route::resource('user', 'UserController');
 Route::resource('article', 'ArticleController');
 
 Route::resource('comment', 'CommentController');
+
+Route::get('authuser', 'UserController@getAuthUser');
